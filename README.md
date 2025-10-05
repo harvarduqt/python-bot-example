@@ -15,7 +15,15 @@ Or on Windows (Powershell):
 
 To install the python sdk package, run the following:
 ```bash
+pip install python-dotenv
 pip install huqt_oracle_pysdk
+```
+
+Create an .env file for your account address and API key (no space, no quotation mark)
+```
+ACCOUNT_ADDRESS=00000000-0000-0000-0000-000000000000
+API_KEY=00000000-0000-0000-0000-000000000000
+
 ```
 
 Run the file by:
@@ -38,7 +46,7 @@ def get_self_pending_requests(self) -> dict[str, tuple[int, str, dict]]:
 def get_issued_options_quantity(self, is_global: bool = False) -> dict[str, int]:
 ```
 
-## Useful Write States Endpoints (all sync):
+## Useful Write States Endpoints (all async):
 ```python
 async def place_limit_order(self, market: str, side: int, price: int, size: int, tif: int):
 async def place_market_order(self, market: str, side: int, collateral: int):
