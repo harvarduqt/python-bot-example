@@ -1,6 +1,18 @@
 # trading-bot-example
 
-First, make a virtual environment:
+First, make sure the python version is greater than 3.10.
+You can check this by running one of:
+```bash
+python --version
+python3 --version
+``` 
+If your python is 3.9 or lower, you can upgrade it by either
+```bash
+brew upgrade python
+```
+or simply go to [python.org/downloads](https://python.org/downloads) and download a newer version.
+
+Next, make a virtual environment:
 ```bash
 python -m venv .venv
 ```
@@ -18,6 +30,11 @@ To install the python sdk package, run the following:
 pip install python-dotenv
 pip install huqt_oracle_pysdk
 ```
+To update the package, run 
+```bash
+pip install --update huqt_oracle_pysdk
+```
+The current version should be v0.1.3.
 
 Create an .env file for your account address and API key (no space, no quotation mark)
 ```
