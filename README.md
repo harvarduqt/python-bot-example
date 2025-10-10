@@ -33,7 +33,11 @@ To update the package, run
 ```bash
 pip install --update huqt_oracle_pysdk
 ```
-The current version should be v0.1.3.
+The current version should be v0.1.5. Depending on whether you have SSL certificate issue,
+you might want to add 
+```bash
+pip install -U certifi
+```
 
 Create an .env file for your account address and API key (no space, no quotation mark)
 ```
