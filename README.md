@@ -74,6 +74,7 @@ def get_issued_options_quantity(self, is_global: bool = False) -> dict[str, int]
 async def place_limit_order(self, market: str, side: int, price: int, size: int, tif: int):
 async def place_market_order(self, market: str, side: int, collateral: int):
 async def place_auction_order(self, market: str, price: int):
+async def cancel_order(self, market: str, order_id: int):
 async def deposit(self, symbol: str, amount: int):
 async def withdraw(self, symbol: str, amount: int):
 async def convert(self, conversion: str, size: int):
