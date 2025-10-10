@@ -27,7 +27,6 @@ Or on Windows (Powershell):
 
 To install the python sdk package, run the following:
 ```bash
-pip install python-dotenv
 pip install huqt_oracle_pysdk
 ```
 To update the package, run 
@@ -42,6 +41,9 @@ ACCOUNT_ADDRESS=00000000-0000-0000-0000-000000000000
 API_KEY=00000000-0000-0000-0000-000000000000
 
 ```
+To obtain your key go to the oracle website and go to your account page.
+Press copy beside your account name. In the same page there should be a API-keys tab,
+you can use any of the keys.
 
 Run the file by:
 ```bash
