@@ -82,5 +82,5 @@ async def issue_option(self, name, size):
 async def exercise_option(self, name, size):
 ```
 
-## Example Usage
+## Winning Reference Implementation by Jonathan Wu
 A prediction market contest was held from November 20–22, 2025, focused on forecasting various aspects of the Harvard–Yale football game—including the winner, point totals, point differential, number of touchdowns, and other game-related contracts. First place was awarded to Jonathan Wu for his program in [HarvardYale_Winner_JonathanWu.py](./HarvardYale_Winner_JonathanWu.py)
