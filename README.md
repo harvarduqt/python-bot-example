@@ -84,3 +84,10 @@ async def exercise_option(self, name, size):
 
 ## Winning Reference Implementation by Jonathan Wu
 A prediction market contest was held from November 20–22, 2025, focused on forecasting various aspects of the Harvard–Yale football game—including the winner, point totals, point differential, number of touchdowns, and other game-related contracts. First place was awarded to Jonathan Wu for his program in [HarvardYale_Winner_JonathanWu.py](./HarvardYale_Winner_JonathanWu.py)
+
+## Semi-Systematic Market Maker
+In [gui.py](./HarvardYale_Winner_JonathanWu.py), you can run a very simple semi-systematic market making bot. You can change its fair value, spread, and position upper and lower bounds. You will additionally need to install the following:
+```bash
+pip install -U aiohttp
+```
+The frontend will run on http://localhost:8080.
