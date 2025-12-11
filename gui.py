@@ -564,7 +564,7 @@ async def main():
     app = build_web_app()
     runner = web.AppRunner(app)
     await runner.setup()
-    site = web.TCPSite(runner, "0.0.0.0", 8080)
+    site = web.TCPSite(runner, "127.0.0.1", 8080)
     await site.start()
     print("Web GUI running on http://localhost:8080")
 
